@@ -1,0 +1,8 @@
+/**app.wxss**/
+.container {
+  box-sizing: border-box;
+}
+
+page {
+  background-color: #f7f7f7;
+} 

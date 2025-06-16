@@ -1,0 +1,108 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 搜索栏 -->
+  <view class="search-bar">
+    <view class="search-input">
+      <icon type="search" size="14" color="#999"></icon>
+      <input placeholder="搜索奢侈品、品牌" confirm-type="search" />
+    </view>
+  </view>
+  
+  <!-- 轮播图 -->
+  <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true">
+    <swiper-item>
+      <image src="/static/images/banner_1.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/images/banner_2.jpg" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+  
+  <!-- 品牌分类 -->
+  <view class="category">
+    <view class="category-title">
+      <text>精选品牌</text>
+      <text class="more">查看更多 ></text>
+    </view>
+    <view class="category-list">
+      <view class="category-item">
+        <view class="category-icon">LV</view>
+        <text>路易威登</text>
+      </view>
+      <view class="category-item">
+        <view class="category-icon">C</view>
+        <text>香奈儿</text>
+      </view>
+      <view class="category-item">
+        <view class="category-icon">H</view>
+        <text>爱马仕</text>
+      </view>
+      <view class="category-item">
+        <view class="category-icon">G</view>
+        <text>古驰</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 最近上新 -->
+  <view class="today-recommend">
+    <view class="section-title">最近上新</view>
+    <view class="product-row">
+      <view class="product-card">
+        <image class="product-image" src="/static/images/product_chanel_classic_flap.jpg" mode="aspectFill"></image>
+        <view class="product-info">
+          <text class="product-name">香奈儿Classic Flap 经典翻盖包</text>
+          <text class="product-price">¥15,800</text>
+          <text class="product-ori-price">原价: ¥25,800</text>
+        </view>
+      </view>
+      <view class="product-card">
+        <image class="product-image" src="/static/images/product_lv_neverfull.jpg" mode="aspectFill"></image>
+        <view class="product-info">
+          <text class="product-name">LV Neverfull 手提包</text>
+          <text class="product-price">¥8,600</text>
+          <text class="product-ori-price">原价: ¥12,300</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 热门单品 -->
+  <view class="hot-products">
+    <view class="section-title">热门单品</view>
+    <view class="product-grid">
+      <view class="product-item">
+        <image src="/static/images/product_dior_lady.jpg" mode="aspectFill"></image>
+        <view class="product-desc">
+          <text class="product-brand">Dior</text>
+          <text class="product-name">Lady Dior 手提包</text>
+          <text class="product-price">¥16,800</text>
+        </view>
+      </view>
+      <view class="product-item">
+        <image src="/static/images/product_gucci_marmont.jpg" mode="aspectFill"></image>
+        <view class="product-desc">
+          <text class="product-brand">Gucci</text>
+          <text class="product-name">Marmont 单肩包</text>
+          <text class="product-price">¥9,200</text>
+        </view>
+      </view>
+      <view class="product-item">
+        <image src="/static/images/product_hermes_birkin_25.jpg" mode="aspectFill"></image>
+        <view class="product-desc">
+          <text class="product-brand">Hermes</text>
+          <text class="product-name">Birkin 25 手提包</text>
+          <text class="product-price">¥98,000</text>
+        </view>
+      </view>
+      <view class="product-item">
+        <image src="/static/images/product_ysl_kate.jpg" mode="aspectFill"></image>
+        <view class="product-desc">
+          <text class="product-brand">YSL</text>
+          <text class="product-name">Kate 单肩包</text>
+          <text class="product-price">¥7,600</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

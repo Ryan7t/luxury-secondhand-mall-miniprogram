@@ -1,0 +1,128 @@
+<!--pages/release/release.wxml-->
+<view class="container">
+  <form>
+    <!-- 表单头部 -->
+    <view class="form-header">
+      <text class="form-title">发布二手奢侈品</text>
+      <text class="form-subtitle">填写商品信息，快速发布</text>
+    </view>
+
+    <!-- 上传图片 -->
+    <view class="upload-section">
+      <view class="section-title required">商品图片</view>
+      <view class="upload-desc">上传商品照片，第一张将作为主图（最多9张）</view>
+      <view class="upload-images">
+        <view class="upload-item">
+          <image class="upload-preview" src="/static/images/product_chanel_classic_flap.jpg" mode="aspectFill"></image>
+          <view class="delete-icon">×</view>
+        </view>
+        <view class="upload-item">
+          <view class="upload-add">
+            <text>+</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 基本信息 -->
+    <view class="form-section">
+      <view class="form-item">
+        <view class="item-label required">商品品牌</view>
+        <view class="item-content">
+          <input placeholder="选择或输入品牌名称" placeholder-class="placeholder" />
+          <text class="arrow">></text>
+        </view>
+      </view>
+      <view class="form-item">
+        <view class="item-label required">商品名称</view>
+        <view class="item-content">
+          <input placeholder="例如：香奈儿Classic Flap包" placeholder-class="placeholder" />
+        </view>
+      </view>
+      <view class="form-item">
+        <view class="item-label required">商品系列</view>
+        <view class="item-content">
+          <input placeholder="例如：Classic Flap" placeholder-class="placeholder" />
+        </view>
+      </view>
+    </view>
+
+    <!-- 商品详情 -->
+    <view class="form-section">
+      <view class="form-item">
+        <view class="item-label required">商品品相</view>
+        <view class="item-content">
+          <picker range="{{['全新', '99新', '95新', '9新', '8新', '7新以下']}}">
+            <view class="picker-content">
+              <text class="picker-placeholder">请选择商品成色</text>
+              <text class="arrow">></text>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="form-item">
+        <view class="item-label required">商品分类</view>
+        <view class="item-content">
+          <picker range="{{['包袋', '服装', '鞋履', '配饰', '手表', '珠宝']}}">
+            <view class="picker-content">
+              <text class="picker-placeholder">请选择分类</text>
+              <text class="arrow">></text>
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view class="form-item">
+        <view class="item-label required">购买渠道</view>
+        <view class="item-content">
+          <picker range="{{['专柜', '官网', '代购', '二手市场', '其他']}}">
+            <view class="picker-content">
+              <text class="picker-placeholder">请选择购买渠道</text>
+              <text class="arrow">></text>
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <!-- 价格信息 -->
+    <view class="form-section">
+      <view class="form-item">
+        <view class="item-label required">出售价格</view>
+        <view class="item-content price-input">
+          <text class="price-symbol">¥</text>
+          <input type="digit" placeholder="请输入价格" placeholder-class="placeholder" />
+        </view>
+      </view>
+      <view class="form-item">
+        <view class="item-label">原价</view>
+        <view class="item-content price-input">
+          <text class="price-symbol">¥</text>
+          <input type="digit" placeholder="请输入原价（选填）" placeholder-class="placeholder" />
+        </view>
+      </view>
+    </view>
+
+    <!-- 商品描述 -->
+    <view class="form-section">
+      <view class="form-item">
+        <view class="item-label">详细描述</view>
+        <view class="textarea-content">
+          <textarea placeholder="请描述一下商品的细节、材质、尺寸和使用感受等，让买家更了解您的商品（最多500字）" placeholder-class="placeholder" maxlength="500"></textarea>
+        </view>
+      </view>
+    </view>
+
+    <!-- 验证信息 -->
+    <view class="form-section">
+      <view class="verification-item">
+        <checkbox value="true"></checkbox>
+        <text class="verification-text">我保证商品为正品，并同意平台鉴定</text>
+      </view>
+    </view>
+
+    <!-- 提交按钮 -->
+    <view class="submit-section">
+      <button class="submit-btn">立即发布</button>
+    </view>
+  </form>
+</view>
