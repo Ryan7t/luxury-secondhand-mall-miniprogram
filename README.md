@@ -1,12 +1,13 @@
 # 二手奢侈品小程序
 
+## 写在前面
+今天在闲鱼接单接到一个学生单，比较简单的四个页面，打算全程使用AI完成试试看，没有专门研究prompt，中途有些曲折，但还算完成了，使用cursor的Claude3.7，如有大学生作业是一模一样需求的完全可以直接使用，只需要点个star就好。
+
+前端页面的项目在`master`分支下，包含前后端的目录在`backend-implementation`分支下。
+
+## 项目简介
+
 这是一个微信小程序二手奢侈品商城项目，主要提供奢侈品二手交易平台。
-
-## 分支说明
-
-本项目包含两个分支：
-- **master**: 仅包含微信小程序前端代码
-- **backend-integration**: 包含微信小程序前端代码和Node.js后端API服务
 
 ## 主要功能
 
@@ -26,16 +27,39 @@
 │   ├── cart                # 购物车
 │   ├── profile             # 个人中心
 │   └── release             # 发布页面
+├── server                  # 服务器端代码(在backend-implementation分支)
+│   ├── controllers         # 控制器
+│   ├── models              # 数据模型
+│   ├── routes              # 路由定义
+│   └── server.js           # 服务器入口文件
+├── utils                   # 工具函数
 └── static                  # 静态资源文件夹
     └── images              # 图片资源
 ```
 
 ## 技术栈
 
-- 微信小程序原生开发
-- WXML + WXSS + JavaScript
-- 后端集成(backend-integration分支): Node.js + Express + MySQL
+- 微信小程序原生开发 (WXML + WXSS + JavaScript)
+- Node.js + Express (后端API)
+- SQLite (数据库)
+
+## 安装与运行
+
+### 前端
+1. 克隆仓库到本地
+2. 使用微信开发者工具打开项目目录
+3. 在工具中预览或真机调试
+
+### 后端 (backend-implementation分支)
+1. 切换到backend-implementation分支
+2. 进入server目录
+3. 安装依赖：`npm install`
+4. 启动服务器：`node server.js`
 
 ## 说明
 
 本项目为2025年6月16日的学生课程设计作业。
+
+## 许可证
+
+MIT 
